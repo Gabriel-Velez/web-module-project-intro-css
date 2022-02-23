@@ -1,0 +1,216 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+:root {
+    --nav-red: #FF754E;
+    --nav-blue: #5FD3EC;
+    --nav-yellow: #FFCD6A;
+    --about-background: #DDB9A3;
+    --footer-background: #F9E7DC;
+    --text-color: black;
+    --margin-space: 100px;
+}
+
+.wrapper {
+    padding: 50px 5% 0 5%;
+}
+
+p {
+    font-family: 'Roboto Mon o', monospace;
+    font-size: 1.25em;
+    color: var(--text-color);
+    font-weight: 400;
+}
+
+small {
+    font-size: .8em;
+}
+
+strong {
+    font-weight: 700;
+}
+
+nav {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 0px 0px;
+}
+
+nav a {
+    color: white;
+    border-radius: 10px;
+    text-align: center;
+    text-decoration: none;
+    margin: auto;
+    padding: 20px;
+    font-family: 'Roboto Mono', monospace;
+}
+
+.visitNav {
+    background-color: var(--nav-red);
+}
+
+.learnNav {
+    background-color: var(--nav-blue);
+}
+
+.involvedNav {
+    background-color: var(--nav-yellow);
+}
+
+splash {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 1fr;
+    gap: 0px 0px;
+    margin-top: var(--margin-space);
+    margin-bottom: var(--margin-space);
+}
+
+.splashImage {
+    background-image: url(assets/header_img.jpg);
+    width: 300px;
+    height: 300px;
+    background-size: contain;
+    border-radius: 100%;
+    margin: auto;
+}
+
+.splashWrapper {
+    text-align: center;
+}
+
+.splashWrapper h1 {
+    font-family: 'Chelsea Market', cursive;
+    font-size: 5em;
+}
+
+.splashWrapper:nth-child(2) p {
+    margin-top: 25px;
+}
+
+.aboutSection {
+    background-color: var(--about-background);
+    --text-color: white;
+    padding: 50px;
+}
+
+.aboutSection p:nth-child(1) {
+    margin-bottom: 25px;
+}
+
+.iconSection {
+    padding: 0 30%;
+    margin-top: var(--margin-space);
+    margin-bottom: var(--margin-space);
+    text-align: center;
+}
+
+.iconSection img {
+    width: 350px;
+    height: 350px;
+    margin: auto;
+}
+
+footer {
+    background-color: var(--footer-background);
+}
+
+footer nav {
+    padding: 50px 0;
+}
+
+.footerImage {
+    background-image: url(assets/footer_img.jpg);
+    width: 99vw;
+    height: 450px;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
